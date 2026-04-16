@@ -1,3 +1,9 @@
+## Week 2 Infrastructure
+Runner VM: runner-andreag
+Runner IP: 10.129.3.60
+
+Pipeline status: [![Hello Pipeline](https://github.com/andreagalfaro/cis-410-cybersecurity-automationn/actions/workflows/hello-pipeline.yml/badge.svg)](https://github.com/andreagalfaro/cis-410-cybersecurity-automationn/actions/workflows/hello-pipeline.yml)
+
 # CIS 410: Cybersecurity Automation
 
 
