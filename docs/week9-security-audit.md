@@ -52,16 +52,15 @@
 
 **Q1: Why is roles/run.admin inappropriate for a CI/CD pipeline service account?**
 
-<!-- The roles/run.admin is way too broad, and gives the most permissions, such as deleting services, modfiying IAM on services, and also able to change up traffic splits. This is too much permission for someone that is just the run.admin.-->
+## The roles/run.admin is way too broad, and gives the most permissions, such as deleting services, modfiying IAM on services, and also able to change up traffic splits. This is too much permission for someone that is just the run.admin.
 
 ---
 
 **Q2: What is the security difference between storing a secret in GitHub Secrets vs. Google Secret Manager?**
 
-<!-- Github secrets encrypts the secrets that you manually add, but it is difficult if there is rotation needed or if you need to change the values, as well as who can have access to these secrets. Versus GCP, there is more security; a couple examples are: adui logs, able to view whoever has accessed this, "Fine-Grained IAM", which only allows specific account to read certain secrets.-->
+## Github secrets encrypts the secrets that you manually add, but it is difficult if there is rotation needed or if you need to change the values, as well as who can have access to these secrets. Versus GCP, there is more security; a couple examples are: adui logs, able to view whoever has accessed this, "Fine-Grained IAM", which only allows specific account to read certain secrets.
 
----
 
 **Q3: A coworker says "I will clean up IAM permissions after the project launches. For now I need everything to work fast." What is the risk of this approach?**
 
-<!-- The risk to this approach is certain accounts having full access to services that they should not have access to. This poses risk to what one might do, or even 'accidentally' change. It is best to implement the IAM permissions before launching to ensure that the rightful accounts are assigned to their specific permissions to reduce any risk. -->
+## The risk to this approach is certain accounts having full access to services that they should not have access to. This poses risk to what one might do, or even 'accidentally' change. It is best to implement the IAM permissions before launching to ensure that the rightful accounts are assigned to their specific permissions to reduce any risk.
